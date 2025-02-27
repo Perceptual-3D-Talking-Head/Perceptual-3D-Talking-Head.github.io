@@ -156,7 +156,9 @@
       />
 
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MultiTalk</span> generates 3D talking head with enhanced multilingual performance
+        We define three criteria—temporal synchronization, lip readability, and expressiveness—for perceptually accurate lip movements. 
+        We construct a speech-mesh synchronized representation space that exhibits these properties and use it as a perceptual loss to enhance lip movement quality. 
+        Lastly, we utilize this representation as a perceptual metric and introduce two additional physically-grounded lip synchronization metrics to evaluate these criteria.
       </h2>
     </div>
   </div>
@@ -229,13 +231,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent studies in speech-driven 3D talking head generation have achieved convincing results in verbal articulations.
-            However, generating accurate lip-syncs degrades when applied to input speech in other languages, possibly due to the lack of datasets covering a broad spectrum of facial movements across languages.
-            In this work, we introduce a novel task to generate 3D talking heads from speeches of diverse languages.
-            We collect a new multilingual 2D video dataset comprising 423 hours of talking videos in 20 languages.
-            Utilizing this dataset, we present a baseline model that incorporates language-specific style embeddings, enabling it to capture the unique mouth movements associated with each language.
-            Additionally, we present a metric for assessing lip-sync accuracy in multilingual settings.
-            We demonstrate that training a 3D talking head model with our proposed dataset significantly enhances its multilingual performance.
+            Recent advancements in speech-driven 3D talking head generation have achieved impressive advance in lip synchronization. 
+            However, existing models still fall short in capturing a perceptual alignment between diverse speech characteristics and lip movements. 
+            In this work, we define essential criteria—temporal synchronization, lip readability, and expressiveness— for perceptually accurate lip movements in response to speech signals. 
+            We also introduce a speech-mesh synchronized representation that captures the intricate correspondence between speech and facial mesh. 
+            We plug in this representation as a perceptual loss to guide lip movements, ensuring they are perceptually aligned with the given speech. 
+            Additionally, we utilize this representation as a perceptual metric and introduce two other physically-grounded lip synchronization metrics to evaluate these three criteria. 
+            Experiments demonstrate that training 3D talking head models with our perceptual loss significantly enhances all three aspects of perceptually accurate lip synchronization.
           </p>
         </div>
       </div>
@@ -254,30 +256,6 @@
 <!--      </div>-->
 <!--    </div>-->
     <!--/ Paper video. -->
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{sung2024Multitalk,
-  title={MultiTalk: Enhancing 3D Talking Head Generation Across Languages with Multilingual Video Dataset},
-  author={Sung-Bin, Kim and Chae-Yeon, Lee and Son, Gihun and Hyun-Bin, Oh and Ju, Janghoon and Nam, Suekyeong and Oh, Tae-Hyun},
-  journal={arXiv preprint arXiv:2406.14272},
-  year={2024}
-}</code></pre>
-  </div>
-</section>
-
-
-
-<section class="section" id="Acknowledgment">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Acknowledgment</h2>
-    <p>
-      This research was supported by a grant from KRAFTON AI, and also partially supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (RS-2022-II220124, Development of Artificial Intelligence Technology for Self-Improving Competency-Aware Learning Capabilities; RS-2021-II212068, Artificial Intelligence Innovation Hub; RS-2019-II191906, Artificial Intelligence Graduate School Program (POSTECH)).
-    </p>
   </div>
 </section>
 
