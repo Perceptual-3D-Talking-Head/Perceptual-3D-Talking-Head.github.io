@@ -255,9 +255,90 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Emergent desirable properties in our representation</h2>
+    <div class="has-text-justified">
+      <p>
+        We found that our learned representation exhibits desirable characteristics we pursue for the three criteria.
+      </p>
+    </div>
+    <br>
+    
+    <div class="columns is-centered">
+
+      
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <img src="./static/images/temporal_synchronization.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="max-width: 70%;"
+          />
+          <div class="has-text-justified">
+          <p>
+            <b>Temporal Synchronization.</b>
+            Cosine similarity drops when temporal misalignment is introduced between input speech and 3D face mesh.
+          </p>
+          </div>
+          
+          
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/lip_readability.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="max-width: 70%;"
+          />
+            <div class="has-text-justified">
+            <p>
+              <b>Lip Readability.</b>
+              Our representation tends to form distinct clusters according to phonemes, with vowels and consonants grouped closely. 
+              We also observe a directional progression in the feature space, shifting from phonemes with mouth opening (e.g., /aj/) to those with mouth closing (e.g., /f/).
+            </p>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/expressiveness.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="max-width: 70%;"
+          />
+            <div class="has-text-justified">
+            <p>
+              <b>Expressiveness.</b>
+              We plot speech features at varying speech intensities, showing a directional trend as intensity increases from lowest to highest.
+            </p>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</section>
+  
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
         <h2 class="title is-3">Effectiveness of our perceptual loss for lip readability</h2>
         <video id="test_time" muted controls autoplay width="100%" height="100%" loop controlsList="nodownload">
-        <source src="./media/paint-it/perceptual-3d-talking-head/lip_readability.mp4" type="video/mp4" />
+        <source src="./media/perceptual-3d-talking-head/lip_readability.mp4" type="video/mp4" />
         </video>
       </div>
   </div>
@@ -268,7 +349,7 @@
     <div class="container is-max-desktop has-text-centered">
         <h2 class="title is-3">Effectiveness of our perceptual loss for expressiveness</h2>
         <video id="test_time" muted controls autoplay width="100%" height="100%" loop controlsList="nodownload">
-        <source src="./media/paint-it/perceptual-3d-talking-head/expressiveness.mp4" type="video/mp4" />
+        <source src="./media/perceptual-3d-talking-head/expressiveness.mp4" type="video/mp4" />
         </video>
       </div>
   </div>
