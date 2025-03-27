@@ -206,6 +206,21 @@
 <!--  </div>-->
 <!--</section>-->
 
+<div class="abstract section">
+  <h2 class="title is-3">Abstract</h2>
+    <div class="content has-text-justified" style="padding: 0 5em; color: #363636;">
+      <p>
+        Recent advancements in speech-driven 3D talking head generation have made significant progress in lip synchronization.
+        However, existing models still struggle to capture the perceptual alignment between varying speech characteristics and corresponding lip movements. 
+        In this work, we claim that three criteria—Temporal Synchronization, Lip Readability, and Expressiveness—are crucial for achieving perceptually accurate lip movements. 
+        Motivated by our hypothesis that a desirable representation space exists to meet these three criteria, we introduce a speech-mesh synchronized representation that captures intricate correspondences between speech signals and 3D face meshes. 
+        We found that our learned representation exhibits desirable characteristics, and we plug it into existing models as a perceptual loss to better align lip movements to the given speech. 
+        In addition, we utilize this representation as a perceptual metric and introduce two other physically grounded lip synchronization metrics to assess how well the generated 3D talking heads align with these three criteria. 
+        Experiments show that training 3D talking head generation models with our perceptual loss significantly improve all three aspects of perceptually accurate lip synchronization.
+      </p>
+    </div>
+</div>
+  
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -224,7 +239,7 @@
           </p>
         </div>
 
-        <h3 class="title is-3">What defines perceptually accurate lip movement for a speech signal?</h3>
+        <h2 class="title is-3">What defines perceptually accurate lip movement for a speech signal?</h2>
         <img src="./static/images/teaser_camready.png"
                  class="interpolation-image"
                  alt="Interpolate start reference image."
