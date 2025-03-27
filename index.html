@@ -147,27 +147,6 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="columns is-centered has-text-centered">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-
-      <img src="./static/images/teaser_camready.png"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."
-                 style="max-width: 100%;"
-      />
-
-      <h2 class="subtitle has-text-centered">
-        We define three criteria—temporal synchronization, lip readability, and expressiveness—for perceptually accurate lip movements. 
-        We construct a speech-mesh synchronized representation space that exhibits these properties and use it as a perceptual loss to enhance lip movement quality. 
-        Lastly, we utilize this representation as a perceptual metric and introduce two additional physically-grounded lip synchronization metrics to evaluate these criteria.
-      </h2>
-    </div>
-  </div>
-  </div>
-</section>
-
 
 <!--<section class="hero is-light is-small">-->
 <!--  <div class="hero-body">-->
@@ -234,13 +213,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advancements in speech-driven 3D talking head generation have achieved impressive advance in lip synchronization. 
-            However, existing models still fall short in capturing a perceptual alignment between diverse speech characteristics and lip movements. 
-            In this work, we define essential criteria—temporal synchronization, lip readability, and expressiveness— for perceptually accurate lip movements in response to speech signals. 
-            We also introduce a speech-mesh synchronized representation that captures the intricate correspondence between speech and facial mesh. 
-            We plug in this representation as a perceptual loss to guide lip movements, ensuring they are perceptually aligned with the given speech. 
-            Additionally, we utilize this representation as a perceptual metric and introduce two other physically-grounded lip synchronization metrics to evaluate these three criteria. 
-            Experiments demonstrate that training 3D talking head models with our perceptual loss significantly enhances all three aspects of perceptually accurate lip synchronization.
+            Recent advancements in speech-driven 3D talking head generation have made significant progress in lip synchronization.
+            However, existing models still struggle to capture the perceptual alignment between varying speech characteristics and corresponding lip movements. 
+            In this work, we claim that three criteria—Temporal Synchronization, Lip Readability, and Expressiveness—are crucial for achieving perceptually accurate lip movements. 
+            Motivated by our hypothesis that a desirable representation space exists to meet these three criteria, we introduce a speech-mesh synchronized representation that captures intricate correspondences between speech signals and 3D face meshes. 
+            We found that our learned representation exhibits desirable characteristics, and we plug it into existing models as a perceptual loss to better align lip movements to the given speech. 
+            In addition, we utilize this representation as a perceptual metric and introduce two other physically grounded lip synchronization metrics to assess how well the generated 3D talking heads align with these three criteria. 
+            Experiments show that training 3D talking head generation models with our perceptual loss significantly improve all three aspects of perceptually accurate lip synchronization.
           </p>
         </div>
       </div>
@@ -262,6 +241,28 @@
   </div>
 </section>
 
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">What defines perceptually accurate lip movement for a speech signal?</h2>
+    <div class="hero-body">
+
+      <img src="./static/images/teaser_camready.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="max-width: 100%;"
+      />
+
+      <h2 class="subtitle has-text-centered">
+        In this work, we define three criteria to assess perceptual alignment between speech and lip movements of 3D talking heads: Temporal Synchronization, Lip Readability, and Expressiveness (a). 
+        The motivational hypothesis is the existence of a desirable representation space that models and complies well with the three criteria between diverse speech characteristics and 3D facial movements, as illustrated in (b); 
+        where representations with the same phonemes are clustered, are sensitive to temporal synchronization, and follow a certain pattern as the speech intensity increases. 
+        Consequently, we build a rich speech-mesh synchronized representation space that exhibits the desirable properties.
+      </h2>
+    </div>
+  </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
