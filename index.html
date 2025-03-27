@@ -208,11 +208,8 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Perceptually Accurate 3D Talking Head Generation</h3>
+    <div class="container is-max-desktop has-text-centered">
+        <h2 class="title is-3">Perceptually Accurate 3D Talking Head Generation</h2>
         <img src="./static/images/teaser_camready.png"
                  class="interpolation-image"
                  alt="Interpolate start reference image."
@@ -225,7 +222,60 @@
         Consequently, we build a rich speech-mesh synchronized representation space that exhibits the desirable properties.
         </div>
       </div>
+
+    <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Human Studies on Alignment Criteria</h2>
+    <div class="has-text-justified">
+      <p>
+        We present intriguing findings on human audio-visual perception through human studies.
+      </p>
     </div>
+    <br>
+    
+    <div class="columns is-centered">
+
+      
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <img src="./static/images/teaser_camready.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."
+                 style="max-width: 100%;"
+          />
+          <div class="has-text-justified">
+          <p>
+            <b>Preference scores (1-3) for 3D talking heads with varying lip movement intensities paired with different speech intensities.</b>
+            Humans prefer the lip movements with the intensity that match the intensity of speech.
+          </p>
+          </div>
+          
+          
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/house_interpolation.mp4"
+                      type="video/mp4">
+            </video>
+            <div class="has-text-justified">
+            <p>
+              <b>Human preference between (A) samples with precise timing but low expressiveness, and (B) samples with high expressiveness but 100ms asynchrony—twice the commonly accepted 50ms threshold.</b>
+              Humans are more sensitive to expressiveness than temporal synchronization when perceiving, highlighting the importance of expressiveness.
+            </p>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 
